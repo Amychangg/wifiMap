@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
     <title>Document</title>
     <style>
         #map{
@@ -15,7 +16,7 @@
     <h3>My Google Maps Demo</h3>
     <!--The div element for the map -->
     <div id="map"></div>
-    <script>
+    <!-- <script>
         function initMap(){
             var uluru = {lat: 23.636, lng: 121.044};
             var map = new google.maps.Map(document.getElementById('map'),{
@@ -29,7 +30,6 @@
                     var data = JSON.parse(xhr.responseText);
                     console.log(data);
                     data.forEach(function(value,index){
-                        // xhr.withCredentials = true;
                         var lat = value.LATITUDE;
                         var lng = value.LONGITUDE;
                         var latLng = new google.maps.LatLng(lat,lng);
@@ -51,8 +51,8 @@
         }
         
 
-    </script>
-
+    </script> -->
+    
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnz3iVA9wOl5Q19L7iM8rHVuZq1oTWQbE&callback=initMap">
     </script>
